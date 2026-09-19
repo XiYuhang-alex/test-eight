@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园信息中心（迷你版）</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="libs/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入自定义 CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 导航栏：四个入口 -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href=" ">校园信息中心</a >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#home">首页</a >
+                    <a class="nav-link" href="#rooms">自习室</a >
+                    <a class="nav-link" href="#stats">使用统计</a >
+                    <a class="nav-link" href="three-d/scene.html">校园三维</a >
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 内容区 -->
+    <main class="container">
+        <!-- 首页模块 -->
+        <section id="home" class="mb-4">
+            <h1 class="h3">校园公共信息与数据展示中心（迷你版）</h1>
+            <p class="text-muted">课堂作业 · 教师案例 · 数据来源：课程统一数据集</p >
+            <div class="row g-3" id="summary-cards">
+                <div class="col-md-4"><div class="card p-3">首页卡片占位</div></div>
+                <div class="col-md-4"><div class="card p-3">首页卡片占位</div></div>
+                <div class="col-md-4"><div class="card p-3">首页卡片占位</div></div>
+            </div>
+        </section>
+
+        <!-- 自习室模块占位 -->
+        <section id="rooms" class="mb-4">
+            <h2 class="h5">自习室查询</h2>
+            <p class="text-muted">（第二步将在此处填充筛选逻辑）</p >
+        </section>
+
+        <!-- 统计模块占位 -->
+        <section id="stats" class="mb-4">
+            <h2 class="h5">使用统计（各自习室空余座位）</h2>
+            <p class="text-muted">（第二步将在此处渲染 ECharts 图表）</p >
+            <div id="usage-chart" style="height:360px;"></div>
+        </section>
+    </main>
+
+    <footer class="text-center text-muted py-4">
+        软件开发综合实践 · 课堂作业 · 数据来源：课程统一数据集
+    </footer>
+
+    <!-- 第一步只引入 Bootstrap JS -->
+    <script src="libs/bootstrap.bundle.min.js"></script>
+</body>
+</html>
