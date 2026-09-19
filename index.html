@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大二早八人 | 作息与精力监控台</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="libs/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入自定义 CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 统一导航栏 -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href=" ">☀️ 早八监控台</a >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#home">首页看板</a >
+                    <a class="nav-link" href="#data">作息数据</a >
+                    <a class="nav-link" href="#charts">精力分析</a >
+                    <a class="nav-link" href="three-d/scene.html">校园足迹</a >
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 内容区 -->
+    <main class="container">
+        <!-- 首页看板：四个核心卡片 -->
+        <section id="home" class="mb-4">
+            <h1 class="h3">我的大二生存数据看板</h1>
+            <p class="text-muted">课堂作业 · 数据来源：个人作息记录</p >
+            <div class="row g-3" id="summary-cards">
+                <!-- 这里用 JS 动态生成，先占位 -->
+                <div class="col-md-3"><div class="card p-3 text-center">本周平均睡眠<br><span class="fs-4 fw-bold">--</span> 小时</div></div>
+                <div class="col-md-3"><div class="card p-3 text-center">早八出勤率<br><span class="fs-4 fw-bold">--</span> %</div></div>
+                <div class="col-md-3"><div class="card p-3 text-center">连续早睡天数<br><span class="fs-4 fw-bold">--</span> 天</div></div>
+                <div class="col-md-3"><div class="card p-3 text-center">本周总学习时长<br><span class="fs-4 fw-bold">--</span> 小时</div></div>
+            </div>
+        </section>
+
+        <!-- 数据筛选模块 -->
+        <section id="data" class="mb-4">
+            <h2 class="h5">作息数据筛选</h2>
+            <div class="row g-2 mb-3">
+                <div class="col-auto">
+                    <label for="time-filter" class="form-label">时间段</label>
+                    <select id="time-filter" class="form-select">
+                        <option value="all">全部</option>
+                        <option value="week">本周</option>
+                        <option value="month">本月</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <label for="status-filter" class="form-label">状态</label>
+                    <select id="status-filter" class="form-select">
+                        <option value="all">全部</option>
+                        <option value="good">精力充沛</option>
+                        <option value="tired">有点疲惫</option>
+                        <option value="exhausted">严重缺觉</option>
+                    </select>
+                </div>
+            </div>
+            <!-- 作息日志列表容器 -->
+            <ul id="log-list" class="list-group"></ul>
+        </section>
+
+        <!-- 图表模块 -->
+        <section id="charts" class="mb-4">
+            <h2 class="h5">精力与作息趋势分析</h2>
+            <div id="usage-chart" style="height:360px;"></div>
+        </section>
+    </main>
+
+    <footer class="text-center text-muted py-4">
+        软件开发综合实践 · 大二早八人个人项目
+    </footer>
+
+    <!-- 脚本引入（第一步先只引 Bootstrap，先不引 app.js 和 echarts） -->
+    <script src="libs/bootstrap.bundle.min.js"></script>
+</body>
+</html>
