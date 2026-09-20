@@ -1,66 +1,50 @@
 {
-  "title": "自习室使用统计",
-  "source": "课程统一数据集（教学演示数据，非真实统计）",
-  "rooms": [
-    {
-      "name": "楠苑一楼自习室",
-      "seats": 120,
-      "occupied": 86
+  "summary": {
+    "avgSleep": 8.15,
+    "earlyClassRate": 95,
+    "continuousEarlySleep": 25,
+    "totalStudyHours": 150
+  },
+  "logs": [
+    { "date": "2026-09-01", "sleepHours": 7.5, "status": "good", "note": "开学第一天，状态不错" },
+    { "date": "2026-09-02", "sleepHours": 7.0, "status": "tired", "note": "刚来就早八" },
+    { "date": "2026-09-03", "sleepHours": 6.5, "status": "exhausted", "note": "看剧看的晚了" },
+    { "date": "2026-09-04", "sleepHours": 7.5, "status": "good", "note": "早睡早起" },
+    { "date": "2026-09-05", "sleepHours": 6.5, "status": "tired", "note": "赶作业" },
+    { "date": "2026-09-06", "sleepHours": 7.5, "status": "good", "note": "没有周末" },
+    { "date": "2026-09-07", "sleepHours": 7.0, "status": "good", "note": "状态正常" },
+    { "date": "2026-09-08", "sleepHours": 6.5, "status": "exhausted", "note": "打游戏打的有点晚" },
+    { "date": "2026-09-09", "sleepHours": 7.0, "status": "tired", "note": "早八太痛苦了" },
+    { "date": "2026-09-10", "sleepHours": 7.5, "status": "good", "note": "中午补觉" },
+    { "date": "2026-09-11", "sleepHours": 6.5, "status": "tired", "note": "社团活动回来晚了" },
+    { "date": "2026-09-12", "sleepHours": 8.0, "status": "good", "note": "周五心情好" },
+    { "date": "2026-09-13", "sleepHours": 7.5, "status": "good", "note": "依旧没有周末" },
+    { "date": "2026-09-14", "sleepHours": 7.0, "status": "exhausted", "note": "赶作业，睡的有晚" },
+    { "date": "2026-09-15", "sleepHours": 8.0, "status": "good", "note": "按时睡觉，精神不错" },
+    { "date": "2026-09-16", "sleepHours": 7.0, "status": "tired", "note": "早八太痛苦了" },
+    { "date": "2026-09-17", "sleepHours": 7.5, "status": "good", "note": "中午补了个觉" },
+    { "date": "2026-09-18", "sleepHours": 7.0, "status": "exhausted", "note": "打游戏" },
+    { "date": "2026-09-19", "sleepHours": 10.0, "status": "good", "note": "还是没有周末" },
+    { "date": "2026-09-20", "sleepHours": 8.0, "status": "good", "note": "国庆补课" },
+    { "date": "2026-09-21", "sleepHours": 7.5, "status": "tired", "note": "周一综合征" },
+    { "date": "2026-09-22", "sleepHours": 8.0, "status": "good", "note": "状态恢复" },
+    { "date": "2026-09-23", "sleepHours": 6.5, "status": "exhausted", "note": "快要顶不住了" },
+    { "date": "2026-09-24", "sleepHours": 7.5, "status": "good", "note": "轻松的一天" },
+    { "date": "2026-09-25", "sleepHours": 10.0, "status": "good", "note": "终于中秋放假了" },
+    { "date": "2026-09-26", "sleepHours": 9.0, "status": "good", "note": "放松" },
+    { "date": "2026-09-27", "sleepHours": 11.0, "status": "good", "note": "补觉成功" },
+    { "date": "2026-09-28", "sleepHours": 7.0, "status": "good", "note": "平稳的一天" },
+    { "date": "2026-09-29", "sleepHours": 7.5, "status": "tired", "note": "准备国庆假期" },
+    { "date": "2026-09-30", "sleepHours": 8.0, "status": "good", "note": "放假啦" }
+  ],
+  "energyData": {
+    "daily": {
+      "categories": ["9/13", "9/14", "9/15", "9/16", "9/17", "9/18", "9/19"],
+      "values": [8, 6, 7, 5, 7, 9, 9]
     },
-    {
-      "name": "楠苑二楼自习室",
-      "seats": 96,
-      "occupied": 61
-    },
-    {
-      "name": "楠苑三楼研讨自习室",
-      "seats": 48,
-      "occupied": 33
-    },
-    {
-      "name": "梓苑一楼自习室",
-      "seats": 140,
-      "occupied": 92
-    },
-    {
-      "name": "梓苑二楼自习室",
-      "seats": 88,
-      "occupied": 0
-    },
-    {
-      "name": "图书馆一楼自习区",
-      "seats": 160,
-      "occupied": 118
-    },
-    {
-      "name": "图书馆二楼自习区",
-      "seats": 130,
-      "occupied": 95
-    },
-    {
-      "name": "图书馆三楼静音自习室",
-      "seats": 60,
-      "occupied": 58
-    },
-    {
-      "name": "理科楼一层通宵自习室",
-      "seats": 80,
-      "occupied": 41
-    },
-    {
-      "name": "理科楼三层自习室",
-      "seats": 72,
-      "occupied": 0
-    },
-    {
-      "name": "文科楼二层自习室",
-      "seats": 66,
-      "occupied": 52
-    },
-    {
-      "name": "文科楼四层考研自习室",
-      "seats": 110,
-      "occupied": 103
+    "weekly": {
+      "categories": ["第1周", "第2周", "第3周", "第4周"],
+      "values": [7.07, 7.14, 7.80 , 10.60]
     }
-  ]
+  }
 }
