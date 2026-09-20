@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>校园三维导览</title>
+  <title>我的校园足迹</title>
   <style>
     body { margin: 0; }
     .back {
@@ -17,7 +17,7 @@
   <script src="../libs/three.min.js"></script>
   <script src="../libs/OrbitControls.js"></script>
   <script>
-    // 迷你版校园三维导览：课堂七展示台骨架的复用
+    // 课堂七展示台骨架的复用
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x223354);
     scene.fog = new THREE.Fog(0x223354, 14, 30);
@@ -58,7 +58,7 @@
     roof.position.set(-3, 2.6, -2);
     scene.add(roof);
 
-    // 图书馆
+    // 教学楼
     const library = new THREE.Mesh(
       new THREE.BoxGeometry(2.6, 1.8, 2.6),
       new THREE.MeshStandardMaterial({ color: 0xcfd8dc })
