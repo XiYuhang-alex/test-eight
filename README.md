@@ -14,7 +14,7 @@
 
 1\. 打开终端（Git Bash 或 CMD）。
 
-2\. 进入项目根目录（例如：`cd /d/campus-life-hub`）。
+2\. 进入项目根目录（例如：`cd /c/campus-life`）。
 
 3\. 输入命令启动本地服务器：
 
